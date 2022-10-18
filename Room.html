@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+        <script type="text/javascript" src="js/FuncionesRoom.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+
+    <body>
+        <!-- SECCION PRINCIPAL CON FOTO INICIO-->
+        <div>
+            <section class="mb-40 overflow-hidden">
+              <nav class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
+                <div class="px-6 w-full flex flex-wrap items-center justify-between">
+                  <div class="flex items-center">
+                    <button
+                      class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContentY"
+                      aria-controls="navbarSupportedContentY"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        class="w-5"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <a class="navbar-brand text-blue-600" href="index.html">
+                      <svg class="w-5 h-5 ml-2 lg:ml-0 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="currentColor" d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
+                    <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
+                      <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="index.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="Categoria.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Categoria</a>
+                      </li>
+                      <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="Clientes.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Clientes</a>
+                      </li>
+                      <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="Mensajes.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Mensajes</a>
+                      </li>
+                      <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="Reservaciones.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Reservaciones</a>
+                      </li>
+                      <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" href="Reportes.html" data-mdb-ripple="true" data-mdb-ripple-color="light">Reportes</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+    
+              <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%; background-image: url('https://mdbootstrap.com/img/new/standard/city/078.jpg');
+              height: 500px;">
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed" style="background-color: rgba(0, 0, 0, 0.75);">
+                  <div class="flex justify-center items-center h-full">
+                    <div class="text-center text-white px-6 md:px-12">
+                      <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">LOS MEJORES HOTELES  <br /><span>LAS MEJORES HABITACIONES</span></h1>
+                      <a class="inline-block px-7 py-3 mr-1.5 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="Clientes.html" role="button">SIGUIENTE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="-mt-2.5 md:-mt-4 lg:-mt-6 xl:-mt-10" style="height: 50px; transform: scale(2); transform-origin: top center; color: #fff;">
+                <svg viewBox="0 0 2880 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 0 48 L 1437.5 48 L 2880 48 L 2880 0 L 2160 0 C 1453.324 60.118 726.013 4.51 720 0 L 0 0 L 0 48 Z" fill="currentColor"></path>
+                </svg>
+              </div>
+            </section>
+<!-- SECCION PRINCIPAL CON FOTO FINALL-->
+    <!-- SECCION PRINCIPAL CUADROS INICIO-->
+          </div>
+          <section class="text-gray-400 bg-gray-900 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">HABITACIONES</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">LA MEJOR HABITACION, PARA EL MEJOR DESCANSO</p>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-400">Nombre Habitaciones</label>
+                      <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="hotel" class="leading-7 text-sm text-gray-400">hotel</label>
+                      <input type="text" id="hotel" name="hotel" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="stars" class="leading-7 text-sm text-gray-400">Estrellas</label>
+                      <input type="number" id="stars" name="stars" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="description" class="leading-7 text-sm text-gray-400">Descripcion</label>
+                      <input type="text" id="description" name="description" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div><br>
+                   <!-- SECCION BOTON DESPLEGABLE INICIAL--> 
+                   <div class="p-2 w-full">                                     
+                    <select class="flex mx-auto bg-gray-800 bg-opacity-40 rounded border border-gray-700  focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" id="select-category" >
+                    </select>
+
+                   </div>
+                      <!-- SECCION BOTON DESPLEGABLE FINAL--> 
+                      <!-- SECCION BOTON  INICIAL--> 
+                    
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg" onclick="postRoom()">Crear Habitaciones</button>
+                  </div>
+                  <!-- SECCION BOTON FINAL-->
+                  <!-- SECCION TABLES INICIAL--> 
+                  <div class="flex flex-col">
+                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                          <table class="min-w-full text-center">
+                            <thead class="border-b">
+                              <tr>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  #
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Nombre Habitaciones
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Hotel
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Estrellas
+                                  </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Descripcion
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Categoria
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Borrar
+                                </th>
+                                <th scope="col" class="text-sm font-medium text-white px-6 py-4">
+                                  Actualizar
+                                </th>
+                              </tr>
+                            </thead>
+                          </table>
+                          <div id="resultado1"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SECCION TABLES FINAL-->
+
+                  <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                    <a class="text-purple-400">Creador por SCR 2022</a>
+                    </p>
+                    <span class="inline-flex">
+                      <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<!-- SECCION BOTON FINAL-->
+<!-- SECCION PRINCIPAL CUADROS FINAL-->
+        <script type="text/javascript">
+            window.onload = getRoom_Category();
+        </script>
+
+
+        <script type="text/javascript">
+            window.onload = getRoom();
+        </script>
+
+        
+    </body>
+
+
+</html>
